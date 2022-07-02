@@ -1,0 +1,79 @@
+﻿@page "/contacts"
+
+
+<section>
+    <div class="container-fluid py-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="pass">
+                    <a href="/">Главная</a>
+                    <a href="#">Свяжитесь с нами</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="overflow-hidden">
+    <div class="container-fluid ps-0">
+        <div class="row">
+            <div class="col-lg-6 ps-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-title">
+                            Свяжитесь с нами
+                        </h3>
+                    </div>
+                    <div class="col-lg-10 ps-4 cyan-block">
+                        <p class="mt-3 section-subtitle">
+                            У нас Вы можете быстро найти медицинских специалистов по самым разным вопросам,
+                            узнать "второе мнение" и получить альтернативное решение для Вашей проблемы.
+                            Проблема? Пишите! Поможем.
+                            Опишите коротко Вашу проблему, задайте любой вопрос про наш сервис.
+                            Мы Вам быстро ответим.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ps-4 mt-lg-0 mt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <form method="post" id="requestForm">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <label class="input-group">
+                                        <span>Ваше имя</span>
+                                        <div class="inpt-buff">
+                                            <input name="name" type="text" placeholder="Иван">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-lg-8 mt-4">
+                                    <label class="input-group">
+                                        <span>Ваш e-mail</span>
+                                        <div class="inpt-buff">
+                                            <input name="email" type="email" placeholder="IvanIvanov@gmail.com">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-lg-10 mt-4">
+                                    <label class="input-group">
+                                        <span>Ваш вопрос</span>
+                                        <div class="inpt-buff">
+                                            <textarea placeholder="Я хотел бы спросить..." name="comment"
+                                                      class="w-100" rows="5"></textarea>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <a href="#" class="mybtn linear">
+                                        Отправить
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

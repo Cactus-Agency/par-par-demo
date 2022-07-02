@@ -1,0 +1,17 @@
+﻿<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path opacity="0.6" d="M80 0H30C13.4315 0 0 13.4315 0 30V80H50C66.5685 80 80 66.5685 80 50V0Z" fill="url(#@Id)" />
+    <path d="M28 39.7576L36.16 48L52 32" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <defs>
+        <radialGradient id="@Id" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40 40) scale(40)">
+            <stop offset="0" stop-color="@Fill" />
+            <stop offset="1" stop-color="@Fill" stop-opacity="0" />
+        </radialGradient>
+    </defs>
+</svg>
+
+@code {
+    private string Id { get; init; } = Guid.NewGuid().ToString();
+
+    [Parameter]
+    public string Fill { get; set; } = "#000";
+}

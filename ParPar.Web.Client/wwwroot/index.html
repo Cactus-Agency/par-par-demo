@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ParPar.Web.Client</title>
+    <base href="/" />
+
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="/css/sticky-footer.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/9.0.1/choices.css"
+          integrity="sha512-iQ8G2lt9BebEGHwYNBR3RSJ5oyTgph2NocAWNFRwFm3puvoRPqXVioeaoWFqLdE5ZUYicIq74H+2GPQIlExHwg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+    <link href="/css/style.min.css" rel="stylesheet" />
+
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+</head>
+
+<body>
+
+    <div id="app">Loading...</div>
+
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.0.7/imask.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><!-- my script -->
+    <script>
+        if (document.dir == "rtl") {
+            document.querySelectorAll('.wow').forEach((e) => {
+                if (e.classList.contains('fadeInLeft')) {
+                    e.classList.remove('fadeInLeft');
+                    e.classList.add('fadeInRight');
+                } else if (e.classList.contains('fadeInRight')) {
+                    e.classList.add('fadeInLeft');
+                    e.classList.remove('fadeInRight');
+                }
+            });
+        }
+
+        new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/9.0.1/choices.min.js"
+            integrity="sha512-Jex3o5q2NYqbgb4GnE718R/FFdBaY395iW5eDDRACtrLfzOgttk6UuU0e//ls0nlmVQSX/YkyKJ2z8yK/LgKFQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"
+            integrity="sha512-jWNpWAWx86B/GZV4Qsce63q5jxx/rpWnw812vh0RE+SBIo/mmepwOSQkY2eVQnMuE28pzUEO7ux0a5sJX91g8A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function openMenu() {
+            const menu = document.querySelector('.mob-menu');
+            const button = document.querySelector('.navbar-toggler');
+            document.querySelector('body').classList.toggle('stop');
+            document.querySelector('.overllay').classList.toggle('show');
+            setTimeout(() => {
+                menu.querySelectorAll('*').forEach((e) => {
+                    e.classList.toggle('show');
+                })
+            }, 200)
+
+            menu.classList.toggle('show');
+            button.classList.toggle('is-menu-open');
+        }
+
+
+        function toggleRtl() {
+            const current = document.querySelector("html").getAttribute("dir");
+            document.querySelector("html").setAttribute("dir", current == "rtl" ? "ltr" : "rtl");
+        }
+    </script>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+﻿<div class="position-absolute" style="left: @Left; top: @Top; transform: translate(-50%, -50%);">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="11" fill="white" stroke="@Fill" stroke-width="8" />
+    </svg>
+</div>
+
+@code {
+    /// <summary>
+    /// Hex color
+    /// </summary>
+    [Parameter]
+    public string Fill { get; set; } = "#000";
+
+    [Parameter]
+    public string Left { get; set; } = "0";
+
+    [Parameter]
+    public string Top { get; set; } = "0";
+}

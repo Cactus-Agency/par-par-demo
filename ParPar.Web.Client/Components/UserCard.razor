@@ -1,0 +1,61 @@
+﻿<div class="user-card h-100">
+    <div class="d-flex flex-column">
+
+        <div class="image d-flex justify-content-center my-3">
+            <div style="padding: 20px; border-radius: 50%; background: #fff;">
+                <div style="box-shadow: @Color; padding: 20px; border-radius: 50%; background: #fff;">
+                    <div style="border-radius: 50%">
+                        <img src="@ImageUrl" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="title">
+                @Title
+            </h4>
+        </div>
+        <div class="subtitle">
+            <p>
+                @Subtitletle
+            </p>
+        </div>
+
+        <div class="role my-2">
+            <p>
+                @Role
+            </p>
+        </div>
+
+        <hr />
+
+        <div class="description">
+            <p>
+                @((MarkupString)Description)
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+@code {
+    [Parameter]
+    public string ImageUrl { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Color { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Subtitletle { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Role { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Description { get; set; } = string.Empty;
+}
