@@ -131,7 +131,7 @@ a {
 
 .ded-inside {
     overflow: hidden;
-    background: center url(/img/img1.png), var(--linear);
+    background: center url(img/img1.png), var(--linear);
     background-repeat: no-repeat;
 }
 
@@ -144,7 +144,7 @@ section {
 }
 
 .gif-bg {
-    background: url(/img/iPhone_animated_1.gif);
+    background: url(img/iPhone_animated_1.gif);
     background-repeat: no-repeat;
     background-position: 55% 100%;
 }
@@ -381,12 +381,12 @@ button {
 }
 
 footer {
-    background: 70% 70% url(/img/img2.png), var(--linear);
+    background: 70% 70% url(img/img2.png), var(--linear);
     background-repeat: no-repeat;
 }
 
 [dir="rtl"] footer {
-    background: 30% 70% url(/img/img2.png), var(--linear);
+    background: 30% 70% url(img/img2.png), var(--linear);
     background-repeat: no-repeat;
 }
 
@@ -865,13 +865,13 @@ body.stop {
     }
 
     .ded-inside {
-        background: -34% 60% url(/img/img1.png), var(--linear);
+        background: -34% 60% url(img/img1.png), var(--linear);
         background-size: 150% !important;
         background-repeat: no-repeat;
     }
 
     [dir="rtl"] .ded-inside {
-        background: 108% -56% url(/img/img1.png), var(--linear);
+        background: 108% -56% url(img/img1.png), var(--linear);
         background-size: 150% !important;
         background-repeat: no-repeat;
     }
@@ -910,13 +910,13 @@ body.stop {
     }
 
     .ded-inside {
-        background: 18% -25% url(/img/img1.png), var(--linear);
+        background: 18% -25% url(img/img1.png), var(--linear);
         background-size: 200% !important;
         background-repeat: no-repeat;
     }
 
     [dir="rtl"] .ded-inside {
-        background: 89% -119% url(/img/img1.png), var(--linear);
+        background: 89% -119% url(img/img1.png), var(--linear);
         background-size: 200% !important;
         background-repeat: no-repeat;
     }

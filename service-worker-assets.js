@@ -33,7 +33,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-PKOvUtbK9Xo3SyDqy6e3U3\/RVt+8jTV5xeoZdcY4H9I=",
+      "hash": "sha256-\/20s5mAB\/BZMUfdnjXzJICZTX2YbCCSV9\/Lnm4xfHSg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-9bijOZrJd31TjV2lTJhDpIkOEt\/n5qDOf6My+2OkZ4Q=",
+      "hash": "sha256-oARwPAYKc8woLhykicErDMCnfDSVuzA0t5zx\/UD7SlY=",
       "url": "_framework\/ParPar.Web.Client.dll"
     },
     {
@@ -673,15 +673,15 @@
       "url": "css\/sticky-footer.css"
     },
     {
-      "hash": "sha256-FHcRf\/9udnM2sb2XJJ4HkLa2RzH4xUoQTHz6ss77i50=",
+      "hash": "sha256-XGJxGo3ASaVFzC94CG+Ho+E2HTkNNN85wiGO0gRRl9Y=",
       "url": "css\/style.css"
     },
     {
-      "hash": "sha256-qeB6rMW9lqLkgDLnt7s94n8NTyTlnkL33NUFNolLwTs=",
+      "hash": "sha256-l0VaDqFykd7bJ5Oxd\/UeK7JBnkK0EO+QKDg8QHF1P1A=",
       "url": "css\/style.min.css"
     },
     {
-      "hash": "sha256-azma1Ua\/LqM1hRk5sK1Oi+d69Z84Ohnu9X0rFlKKM+o=",
+      "hash": "sha256-18B1gyKep2pc29EvIXLs1WWMMW5Ky0hRgsszflGYTaM=",
       "url": "css\/style.scss"
     },
     {
@@ -805,5 +805,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "EMHpPF4K"
+  "version": "V8vTZsYp"
 };
